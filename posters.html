@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+
+    <title>Silentium</title>
+</head>
+
+<body>
+    <div class="menu">
+        <img src="./img/Rectangle.svg" alt="" class="svg-corner" id="rec1">
+        <img src="./img/Rectangle.svg" alt="" class="svg-corner" id="rec2">
+        <img src="./img/Rectangle.svg" alt="" class="svg-corner" id="rec3">
+        <img src="./img/Rectangle.svg" alt="" class="svg-corner" id="rec4">
+        <div class="header">
+            <a href="index.html" class="btn" id="btn_first">Главная</a>
+            <a href="lab.html" class="btn" id="btn_first">Лаборатория</a>
+            <a href="posters.html" class="btn" id="btn_first">Плакаты</a>
+            <a href="shop.html" class="btn" id="btn_first">Мерч</a>
+        </div>
+    </div>
+
+    <section class="first_screen4">
+        <p class="h1" id="posters_head">ПЛАКАТЫ</p>
+        <div class="collections">
+            <div class="collection_posters">
+                <img src="./img/poster11.jpg" alt="" class="poster">
+                <img src="./img/poster12.jpg" alt="" class="poster">
+                <img src="./img/poster13.jpg" alt="" class="poster">
+            </div>
+            <div class="collection_posters">
+                <img src="./img/poster21.jpg" alt="" class="poster">
+                <img src="./img/poster22.jpg" alt="" class="poster">
+                <img src="./img/poster23.jpg" alt="" class="poster">
+            </div>
+            <div class="collection_posters">
+                <img src="./img/poster31.jpg" alt="" class="poster">
+                <img src="./img/poster32.jpg" alt="" class="poster">
+                <img src="./img/poster33.jpg" alt="" class="poster">
+            </div>
+        </div>
+        <div class="navigation">
+            <button class="btn" id="btn_arrow1"><img src="./img/arrow_left.svg" alt=""></button>
+            <p class="text" id="poster_discription">Постеры, которые демонстрируют широкий диапозон работ компании</p>
+            <button class="btn" id="btn_arrow2"><img src="./img/arrow.svg" alt=""></button>
+        </div>
+
+
+    </section>
+    <script>document.addEventListener('DOMContentLoaded', function () {
+            const collectionContainers = document.querySelectorAll('.collection_posters');
+            const totalCollections = collectionContainers.length;
+            let currentCollection = 0;
+
+            document.getElementById('btn_arrow1').addEventListener('click', function () {
+                currentCollection = (currentCollection === 0) ? totalCollections - 1 : currentCollection - 1;
+                updateCollections();
+            });
+
+            document.getElementById('btn_arrow2').addEventListener('click', function () {
+                currentCollection = (currentCollection === totalCollections - 1) ? 0 : currentCollection + 1;
+                updateCollections();
+            });
+
+            function updateCollections() {
+                collectionContainers.forEach(function (collection, index) {
+                    if (index === currentCollection) {
+                        collection.style.display = 'flex';
+                    } else {
+                        collection.style.display = 'none';
+                    }
+                });
+            }
+        });</script>
+
+    <section class="footer">
+        <img src="./img/logo_main.svg" alt="">
+        <div class="more">
+            <p class="numb">Контакты</p>
+            <div class="information">
+                <p class="text">89059339601</p>
+                <p class="text">admin@slnt.ru</p>
+                <p class="text">@silentium</p>
+            </div>
+        </div>
+        <div class="more">
+            <p class="numb">Сервисы</p>
+            <div class="information">
+                <p class="text">Зарезервировать купол</p>
+                <p class="text">Расписание </p>
+                <p class="text">Помощь</p>
+            </div>
+        </div>
+    </section>
+
+</body>

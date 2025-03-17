@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+
+    <title>Silentium</title>
+</head>
+
+<body>
+    <div class="menu">
+        <img src="./img/Rectangle.svg" alt="" class="svg-corner" id="rec1">
+        <img src="./img/Rectangle.svg" alt="" class="svg-corner" id="rec2">
+        <img src="./img/Rectangle.svg" alt="" class="svg-corner" id="rec3">
+        <img src="./img/Rectangle.svg" alt="" class="svg-corner" id="rec4">
+        <div class="header">
+            <a href="index.html" class="btn" id="btn_first">Главная</a>
+            <a href="lab.html" class="btn" id="btn_first">Лаборатория</a>
+            <a href="posters.html" class="btn" id="btn_first">Плакаты</a>
+            <a href="shop.html" class="btn" id="btn_first">Мерч</a>
+        </div>
+    </div>
+
+    <section class="first_screen3">
+        <div class="head">
+            <p class="h1" id="lab_head">SILENTIUM LAB</p>
+            <p class="text" id="lab_discription">Это сеть куполов, являющихся частью инфраструктуры города, <br>
+                которые позволяют погрузиться в абсолютную тишину.
+            </p>
+        </div>
+        <img src="./img/lab.png" alt="" id="lab_image">
+
+    </section>
+
+    <section class="second_screen3">
+        <div class="image1" id="image_book">
+            <div class="overlay1">
+                <div class="card">Справочные материалы</div>
+                <button class="btn" id="btn_first" onclick="openModal()">Купить</button>
+            </div>
+        </div>
+        <div class="links">
+            <p class="numb" id="stuff">Как попасть в команду?</p>
+            <p class="link"><a href="#test" class="link">В тестирование</a></p>
+            <p class="link"><a href="#search" class="link">В исследование</a></p>
+            <p class="link"><a href="#test" class="link">В настройку</a></p>
+        </div>
+    </section>
+    <section class="third_screen3">
+        <img src="./img/lab_black.png" alt="" class="lab_black">
+        <div class="sector">
+            <div class="head_sector" id="search">
+                <img src="./img/sector1.jpg" alt="" class="sector_img">
+                <p class="h2">Отдел<br>исследований</p>
+            </div>
+            <p class="numb" id="sector_text">Отдел исследований занимается проработкой теоретических способов
+                <br>шумоподавления, что
+                дает возможность проводить более тонкую<br> настройку аппаратной части купола для наибольшей
+                эффективности<br> его работы
+            </p>
+            <button class="btn" id="sector_btn" onclick="openModal1()">Оставить заявку</button>
+        </div>
+
+        <div class="sector">
+            <div class="head_sector" id="set">
+                <img src="./img/sector2.jpg" alt="" class="sector_img">
+                <p class="h2">Отдел<br>настройки</p>
+            </div>
+            <p class="numb" id="sector_text">Отдел настройки <br>отвечает
+                за программную часть работы куполов тишины. <br> <br>Разработчики пишут ПО на трех языках: JAVA / Python
+                /
+                C++
+            </p>
+            <button class="btn" id="sector_btn" onclick="openModal1()">Оставить заявку</button>
+        </div>
+
+        <div class="sector">
+            <div class="head_sector" id="test">
+                <img src="./img/sector3.jpg" alt="" class="sector_img">
+                <p class="h2">Отдел<br>тестирования</p>
+            </div>
+            <p class="numb" id="sector_text">Отдел тестирования производит последний этап проработки нового <br>
+                прототипа
+                для продаж: проверка работоспособности в разной среде
+            </p>
+            <button class="btn" id="sector_btn" onclick="openModal1()">Оставить заявку</button>
+        </div>
+
+    </section>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <input type="text" placeholder="Имя" class="btn1">
+            <input type="email" placeholder="Email" class="btn1">
+            <input type="text" placeholder="Адрес" class="btn1">
+            <button class="btn" id="mod_btn" onclick="closeModal()">Оплатить</button>
+        </div>
+    </div>
+
+    <div id="myModal1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal1()">&times;</span>
+            <input type="text" placeholder="Имя" class="btn1">
+            <input type="text" placeholder="Возраст" class="btn1">
+            <input type="email" placeholder="Email" class="btn1">
+            <input type="text" placeholder="Адрес" class="btn1">
+            <input type="text" placeholder="Вопросы" class="btn1">
+            <button class="btn" id="mod_btn" onclick="closeModal1()">Оставить заявку</button>
+        </div>
+    </div>
+
+    <script>
+        function openModal() {
+            document.getElementById("myModal").style.display = "block";
+        }
+
+        function closeModal() {
+            document.getElementById("myModal").style.display = "none";
+        }
+    </script>
+
+    <script>
+        function openModal1() {
+            document.getElementById("myModal1").style.display = "block";
+        }
+
+        function closeModal1() {
+            document.getElementById("myModal1").style.display = "none";
+        }
+    </script>
+    <section class="footer">
+        <img src="./img/logo_main.svg" alt="">
+        <div class="more">
+            <p class="numb">Контакты</p>
+            <div class="information">
+                <p class="text">89059339601</p>
+                <p class="text">admin@slnt.ru</p>
+                <p class="text">@silentium</p>
+            </div>
+        </div>
+        <div class="more">
+            <p class="numb">Сервисы</p>
+            <div class="information">
+                <p class="text">Забронировать купол</p>
+                <p class="text">Расписание мероприятий</p>
+                <p class="text">Консультации</p>
+            </div>
+        </div>
+    </section>
+
+</body>

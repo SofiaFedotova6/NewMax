@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+
+    <title>Silentium</title>
+</head>
+
+<body>
+    <div class="menu">
+        <img src="./img/Rectangle.svg" alt="" class="svg-corner" id="rec1">
+        <img src="./img/Rectangle.svg" alt="" class="svg-corner" id="rec2">
+        <img src="./img/Rectangle.svg" alt="" class="svg-corner" id="rec3">
+        <img src="./img/Rectangle.svg" alt="" class="svg-corner" id="rec4">
+        <div class="header">
+            <a href="index.html" class="btn" id="btn_first">Главная</a>
+            <a href="lab.html" class="btn" id="btn_first">Лаборатория</a>
+            <a href="posters.html" class="btn" id="btn_first">Плакаты</a>
+            <a href="shop.html" class="btn" id="btn_first">Мерч</a>
+        </div>
+    </div>
+
+    <section class="first_screen5">
+        <p class="h1" id="shop_head">МЕРЧ</p>
+
+        <img src="./img/shop_main.png" alt="" class="shop_back">
+        <p class="text" id="shop_discription">Чувствуй себя с тишиной в руках, будь в тишине</p>
+    </section>
+    <section class="second_screen5">
+        <div class="collection">
+            <div class="image1" id="shop1">
+                <div class="overlay1">
+                    <div class="card">Шоппер / синий - 2.000 руб</div>
+                    <button class="btn" id="btn_first" onclick="openModal()">Купить</button>
+                </div>
+            </div>
+
+            <div class="image1" id="shop2">
+                <div class="overlay1">
+                    <div class="card">Альбом - 200 руб</div>
+                    <button class="btn" id="btn_first" onclick="openModal()">Купить</button>
+                </div>
+            </div>
+
+            <div class="image1" id="shop3">
+                <div class="overlay1">
+                    <div class="card">Наушники - 3.000 руб</div>
+                    <button class="btn" id="btn_first" onclick="openModal()">Купить</button>
+                </div>
+            </div>
+
+            <div class="image1" id="shop4">
+                <div class="overlay1">
+                    <div class="card">Блокнот - 500 руб</div>
+                    <button class="btn" id="btn_first" onclick="openModal()">Купить</button>
+                </div>
+            </div>
+
+            <div class="image1" id="shop5">
+                <div class="overlay1">
+                    <div class="card">Худи - 2.500 руб</div>
+                    <button class="btn" id="btn_first" onclick="openModal()">Купить</button>
+                </div>
+            </div>
+
+            <div class="image1" id="shop6">
+                <div class="overlay1">
+                    <div class="card">Кепка - 1.500 руб</div>
+                    <button class="btn" id="btn_first" onclick="openModal()">Купить</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <input type="text" placeholder="Имя" class="btn1">
+                <input type="email" placeholder="Email" class="btn1">
+                <input type="text" placeholder="Адрес" class="btn1">
+                <button class="btn" id="mod_btn" onclick="closeModal()">Оплатить</button>
+            </div>
+        </div>
+
+        <script>
+            function openModal() {
+                document.getElementById("myModal").style.display = "block";
+            }
+
+            function closeModal() {
+                document.getElementById("myModal").style.display = "none";
+            }
+        </script>
+    </section>
+    <section class="footer" id="screen_shop">
+        <img src="./img/logo_main.svg" alt="">
+        <div class="more">
+            <p class="numb">Контакты</p>
+            <div class="information">
+            <p class="text">89059339601</p>
+            <p class="text">admin@slnt.ru</p>
+            <p class="text">@silentium</p>
+        </div>
+    </div>
+    <div class="more">
+        <p class="numb">Сервисы</p>
+        <div class="information">
+            <p class="text">Зарезервировать купол</p>
+            <p class="text">Расписание </p>
+            <p class="text">Помощь</p>
+        </div>
+    </div>
+</section>
+
+</body>

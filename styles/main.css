@@ -1,0 +1,599 @@
+.svg-corner {
+    position: fixed;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 2vw;
+    border: 2px solid black;
+    padding: 4vw;
+    border-radius: 28px;
+    gap: 6vw;
+
+}
+
+
+
+.more {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+.information {
+    display: flex;
+    flex-direction: column;
+    gap: 0, 4vh;
+}
+
+.btn1 {
+    background-color: #eeeeee;
+    color: black;
+    border: none;
+    padding: 12px 12px;
+    margin-top: 1vh;
+    cursor: text;
+    font: 600;
+    font-size: 16px;
+    border: 2px solid black;
+    border-radius: 50px;
+    margin: 0.3vw;
+    text-decoration: none;
+    font-family: 'AeonikPro-Medium';
+}
+
+#mod_btn {
+    margin-top: 4vh;
+    padding: 12px 12px;
+}
+
+.close {
+    cursor: pointer;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    background-color: #f9f9f9;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 24vw;
+    border-radius: 28px;
+}
+
+.close {
+    color: #000000;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 4vh;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+}
+
+
+#rec1 {
+    top: 1.67vw;
+    right: 1.67vw;
+}
+
+#rec2 {
+    top: 1.67vw;
+    left: 1.67vw;
+}
+
+#rec3 {
+    bottom: 1.67vw;
+    left: 1.67vw;
+}
+
+#rec4 {
+    bottom: 1.67vw;
+    right: 1.67vw;
+}
+
+.header {
+    position: fixed;
+    width: 100vw;
+    justify-content: center;
+    display: flex;
+    margin-top: 1.67vh;
+    z-index: 100;
+}
+
+.btn {
+    background-color: #ffffff;
+    color: black;
+    border: none;
+    padding: 4px 12px;
+    margin-top: 1vh;
+    cursor: pointer;
+    font: 600;
+    font-size: 16px;
+    border: 2px solid black;
+    border-radius: 50px;
+    margin: 0.3vw;
+    text-decoration: none;
+    font-family: 'AeonikPro-Medium';
+}
+
+.btn:hover {
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    border: 2px solid #000000;
+}
+
+.first_screen1 {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+.about {
+    margin-top: 30vh;
+}
+
+.logotype {
+    width: 75vw;
+
+}
+
+.numb {
+    font-weight: 600;
+    font-size: 16px;
+    font-family: 'AeonikPro-Medium';
+}
+
+#numb_1 {
+    position: absolute;
+    margin-top: 25vh;
+    margin-left: -70vw;
+}
+
+#numb_2 {
+    position: absolute;
+    margin-top: 30vh;
+    margin-left: 75vw;
+}
+
+#numb_3 {
+    position: absolute;
+    margin-top: 55vh;
+    margin-left: -75vw;
+}
+
+#numb_4 {
+    position: absolute;
+    margin-top: 55vh;
+    margin-left: 78vw;
+}
+
+#numb_5 {
+    position: absolute;
+    margin-top: 55vh;
+    margin-left: -22vw;
+}
+
+.text {
+    font-weight: 600;
+    font-size: 12px;
+    font-family: 'AeonikPro-Medium';
+    line-height: 120%;
+}
+
+#text_1 {
+    position: absolute;
+    margin-top: 55vh;
+    margin-left: -50vw;
+}
+
+.second_screen1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 60vh;
+}
+
+#slider {
+    width: 100%;
+    text-align: center;
+    margin-top: 5vh;
+
+}
+
+#slider1 {
+    width: 100%;
+    text-align: center;
+    margin-top: 5vh;
+
+}
+
+.image-container {
+    display: flex;
+    height: 80vh;
+    margin-top: 2vh;
+
+}
+
+.image-container::-webkit-scrollbar {
+    width: 0;
+}
+
+.image-main {
+    margin-top: -12vh;
+}
+
+.image {
+    height: 300px;
+    width: 500px;
+    background-image: url(../img/1.png);
+    background-size: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    border-radius: 200px;
+    transition: 0.5s ease-in-out;
+    margin: 0.3vw;
+    scroll-snap-align: start;
+    flex: 0 0 35%;
+}
+
+.image:hover {
+    height: 600px;
+    border-radius: 29px;
+}
+
+.image:hover .overlay {
+    display: flex;
+
+}
+
+.overlay {
+    height: 45px;
+    width: 89%;
+    background-color: rgba(255, 255, 255, 1);
+    color: rgb(0, 0, 0);
+    padding: 16px 24px;
+    justify-content: space-between;
+    border-radius: 24px;
+    margin-top: 48vh;
+    display: none;
+
+}
+
+#image_2 {
+    background-image: url(../img/2.png);
+}
+
+#image_3 {
+    background-image: url(../img/3.png);
+}
+
+#image_4 {
+    background-image: url(../img/4.png);
+}
+
+#image_5 {
+    background-image: url(../img/5.png);
+}
+
+.card {
+    font-weight: 600;
+    font-size: 16px;
+    font-family: 'AeonikPro-Medium';
+    margin-top: 1.2vh;
+}
+
+.image-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+}
+
+.third_screen1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 100vh;
+    margin-top: 20vh;
+}
+
+
+.image2 {
+    height: 70vh;
+    width: 80vw;
+    background-image: url(../img/place.gif);
+    background-size: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    border-radius: 29px;
+    transition: 0.5s ease-in-out;
+    margin: 0.3vw;
+    scroll-snap-align: start;
+    flex: 0 0 35%;
+}
+
+.overlay2 {
+    height: 45px;
+    width: 70%;
+    background-color: rgba(255, 255, 255, 1);
+    color: rgb(0, 0, 0);
+    padding: 16px 24px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 24px;
+    margin-top: 60vh;
+
+}
+
+.first_screen2 {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+.first_screen3 {
+    height: 100vh;
+    display: flex;
+}
+
+.head {
+    margin-top: 20vh;
+}
+
+.h1 {
+    font-weight: 700;
+    font-size: 11.161vw;
+    font-family: 'AeonikPro-Bold';
+    margin-top: 1.2vh;
+}
+
+#lab_head {
+    width: 100vw;
+    text-align: center;
+}
+
+#lab_discription {
+    margin-left: 10vw;
+}
+
+#lab_image {
+    position: absolute;
+    margin-left: 20vh;
+    margin-top: 30vh;
+    width: 70vw;
+}
+
+.second_screen3 {
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10vw;
+    margin-right: 20vw;
+}
+
+.image1 {
+    height: 600px;
+    width: 600px;
+    background-image: url(../img/book.jpg);
+    background-size: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    border-radius: 29px;
+    margin: 0.3vw;
+    margin-top: 20vh;
+    margin-bottom: 10vh;
+}
+
+
+
+.overlay1 {
+    height: 45px;
+    width: 89%;
+    background-color: rgba(255, 255, 255, 1);
+    color: rgb(0, 0, 0);
+    padding: 16px 24px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 24px;
+    margin-top: 48vh;
+
+}
+
+.links {
+    margin-top: 20vh;
+}
+
+.link {
+    font-weight: 600;
+    font-size: 3.571vw;
+    font-family: 'AeonikPro-Medium';
+    margin-top: 4vh;
+    text-decoration: underline;
+    color: #000000;
+
+}
+
+.third_screen3 {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    gap: 10vw;
+}
+
+.sector {
+    z-index: 1;
+    margin-left: 10vw;
+}
+
+.sector_img {
+    width: 5vw;
+    height: 5vw;
+}
+
+.head_sector {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vw;
+}
+
+.h2 {
+    font-weight: 600;
+    font-size: 5.580vw;
+    font-family: 'AeonikPro-Medium';
+}
+
+#sector_btn {
+    margin-top: 3vh;
+}
+
+#sector_text {
+    margin-top: 3vh;
+    line-height: 120%;
+}
+
+.lab_black {
+    position: absolute;
+    z-index: 0;
+    margin-left: 40vw;
+    margin-top: -5vh;
+    scale: 70%;
+}
+
+.first_screen5 {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    height: auto;
+}
+
+#shop_head {
+    margin-top: 20vh;
+    z-index: 0;
+}
+
+
+
+.shop_back {
+    width: 30vw;
+    height: auto;
+    z-index: 1;
+    margin-top: -20vh;
+}
+
+.second_screen5 {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+
+}
+
+.collection {
+    display: flex;
+    padding: 4vh 10vw;
+    flex-wrap: wrap;
+    width: 80vw;
+    gap: 1vh;
+    margin-left: 6vw;
+}
+
+#shop1 {
+    background-image: url(../img/shop1.jpg);
+    margin: 0;
+}
+
+#shop2 {
+    background-image: url(../img/shop2.jpg);
+    margin: 0;
+}
+
+#shop3 {
+    background-image: url(../img/shop3.jpg);
+    margin: 0;
+}
+
+#shop4 {
+    background-image: url(../img/shop4.jpg);
+    margin: 0;
+}
+
+#shop5 {
+    background-image: url(../img/shop5.jpg);
+    margin: 0;
+}
+
+#shop6 {
+    background-image: url(../img/shop6.jpg);
+    margin: 0;
+}
+
+.first_screen4 {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+#posters_head {
+    margin-top: 10vh;
+}
+
+.collections {
+    display: flex;
+    padding: 0 5vw;
+    flex-direction: row;
+}
+
+.collection_posters {
+    display: flex;
+    padding: 4vh 10vw;
+    flex-wrap: wrap;
+    width: 70vw;
+    gap: 4vh;
+    justify-content: center;
+}
+
+.poster {
+    transition: 0.2s ease;
+}
+
+.poster:hover {
+    scale: 124%;
+
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 60vw;
+    margin-top: 4vh;
+    align-items: center;
+}
